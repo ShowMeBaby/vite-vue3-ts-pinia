@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 只有被layer包裹的样式类会进行摇钱树优化, 未包裹的样式会始终被原样打包 */
+@layer base {
+  body {
+    @apply bg-bgcolor text-gray-800;
+  }
+}
+@layer components {
+  .btn {
+    @apply bg-cyan-500 shadow-lg shadow-cyan-500/50 text-white p-4 rounded-lg;
+  }
+}
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}
