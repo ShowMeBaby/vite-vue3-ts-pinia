@@ -7,6 +7,7 @@
     <router-link class="btn" to="/vueUse">点击跳转至vueUse页面</router-link> <br /><br />
     <router-link class="btn" to="/request">点击跳转至request请求页面</router-link> <br /><br />
     <router-link class="btn" to="/tailwindcss">点击跳转至tailwindcss页面</router-link> <br /><br />
+    <router-link class="btn" to="/touchview">点击跳转至touchView页面</router-link> <br /><br />
     <router-link class="btn" to="/gamelist">点击跳转至gamelist页面</router-link>
   </div>
 </template>

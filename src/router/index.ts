@@ -5,7 +5,13 @@ const routes: Array<RouteRecordRaw> = [
   { path: '/vueUse', name: 'VueUse', meta: { title: 'vueUse demo', keepAlive: true, requireAuth: true }, component: () => import('@/pages/vueUse.vue') },
   { path: '/request', name: 'RequestPage', meta: { title: 'request demo', keepAlive: true, requireAuth: true }, component: () => import('@/pages/requestPage.vue') },
   { path: '/gamelist', name: 'GameListPage', meta: { title: 'request demo', keepAlive: true, requireAuth: true }, component: () => import('@/pages/gameListPage.vue') },
-  { path: '/tailwindcss', name: 'TailwindcssPage', meta: { title: 'tailwindcss demo', keepAlive: true, requireAuth: true }, component: () => import('@/pages/tailwindcssPage.vue') }
+  {
+    path: '/tailwindcss',
+    name: 'TailwindcssPage',
+    meta: { title: 'tailwindcss demo', keepAlive: true, requireAuth: true },
+    component: () => import('@/pages/tailwindcssPage.vue')
+  },
+  { path: '/touchview', name: 'TouchView', meta: { title: 'tailwindcss demo', keepAlive: true, requireAuth: true }, component: () => import('@/pages/touchView.vue') }
 ]
 const router = createRouter({ history: createWebHistory(), routes })
 export default router
